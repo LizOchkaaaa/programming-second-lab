@@ -1,0 +1,26 @@
+@startuml
+package Move
+Move <|-- DamageMove
+Move <|-- StatusMove
+StatusMove<|-- CalmMind
+StatusMove<|-- Confide
+StatusMove<|-- PlayNice
+StatusMove<|-- Rest
+StatusMove<|-- Swagger
+StatusMove<|-- TailWhip
+DamageMove<|-- SpecialMove
+DamageMove<|-- PhysicalMove
+PhysicalMove<|-- Facade
+PhysicalMove<|-- PoisonJab
+SpecialMove<|-- Extrasensory
+SpecialMove<|-- FocusBlast
+SpecialMove<|-- HydroPump
+SpecialMove<|-- Thunder
+package Pokemons
+Pokemons<|-- Azelf
+Pokemons<|-- Shellder
+Pokemons<|-- Pichu
+Shellder<|-- Cloyster
+Pichu<|-- Pikachu
+Pikachu<|-- Raichu
+@enduml
